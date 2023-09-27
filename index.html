@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Digite os dois Campos para ter um resultado</h1>
+    Um Numero Menor que 100:<input type="number" id="medmin" name="medmin">
+    <br>
+    <br>
+    Um Numero Maior que 100:<input type="number" id="medmax" name="medmax">       
+    <br>
+    <br>    
+    <input type="button" onclick="valor()" value="button">   
+</body>
+<script>
+    function valor()
+    {
+        var cem = 100        
+        var min = document.getElementById('medmin').value
+        var max = document.getElementById('medmax').value 
+
+        if(min < cem)
+        {
+            alert("o numero MENOR esta correto");            
+        }
+        else 
+        {
+            alert("Siga a Ordem a Cima");            
+        }
+        
+        if(max > cem)
+        {
+            alert("o numero MAIOR esta correto");            
+        }
+        else 
+        {
+            alert("Siga a Ordem a Cima");            
+        }
+    }
+</script>
+</html>
